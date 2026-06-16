@@ -311,6 +311,8 @@ async function loadDetails() {
 
   document.getElementById("friendPhoto").src =
    data.ultrasound_url || "./images/image-placeholder.jpeg";
+	document.getElementById("page1Text").textContent =
+  data.message || "";
 }
 
 function setupScratch() {
