@@ -313,6 +313,13 @@ async function loadDetails() {
    data.ultrasound_url || "./images/image-placeholder.jpeg";
 	document.getElementById("page1Text").textContent =
   data.message || "";
+	document.getElementById("scanText").textContent =
+  data.message_2 || "";
+	document.getElementById("babyNameText").textContent =
+  data.baby_name || "";
+
+document.getElementById("babyDateText").textContent =
+  data.due_date || "";
 }
 
 function setupScratch() {
